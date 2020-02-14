@@ -22,5 +22,18 @@ function handleclick() {
     document.querySelector("h1").textContent = "PLAYER 1 WINS!!!";
   } else {
     document.querySelector("h1").textContent = "PLAYER 2 WINS!!!";
-  }
+  };
+  //wait for reload before you can play again
+  document.querySelector("button").disabled=true;
+  document.querySelector(".wait").innerHTML="reloading...";
+//timeout function
+  setTimeout(function(){
+    document.querySelector("h1").textContent = "Click button to play again";
+    image.setAttribute("src", "images/dice6.png" );
+    image2.setAttribute("src", "images/dice6.png" );
+    document.querySelector("button").disabled=false;
+    document.querySelector(".wait").innerHTML="";
+  }, 4000)
+ 
+
 };

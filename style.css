@@ -27,6 +27,11 @@ button{
     color: aqua;
     outline: none;
 }
+.wait{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
 @media(max-width: 425px){
     main{
         flex-direction: column;
